@@ -1,0 +1,42 @@
+#pragma once
+
+int menu();
+void shuru(int* hang, int* lie);
+void shuzuban(int hang, int lie, int fan);
+void end();
+void dayin(int arr[13][13], int hang, int lie);
+void biaoji(int arr[13][13], int hang, int lie,int fan, bool markers[13][13]);
+void yanse(int arr[13][13], bool markers[13][13], int hang, int lie,int fan);
+bool truema(int arr[13][13], int hang, int lie);
+void fan2(int arr[13][13], bool markers[13][13], int hang, int lie, int fan);
+void xialuo(int arr[13][13], bool markers[13][13], int hang, int lie, int fan);
+void tianchong(int arr[13][13], bool markers[13][13], int hang, int lie, int fan);
+bool chushi(int hang, int lie, int fan, int arr[13][13]);
+void suiji(int hang, int lie, int fan, int arr[13][13]);
+void fan3(int arr[13][13], int hang, int lie, int fan);
+void sisan(int arr[13][13], bool tishi[13][13], int hang, int lie, int fan);
+void er(int arr[13][13], bool tishi[13][13], int hang, int lie, int fan);
+void uptwo(bool tishi[13][13], int i, int j, int fan, int center, int up, int upup, int down, int downdown, int left, int leftleft, int right, int rightright);
+void downtwo(bool tishi[13][13], int i, int j, int fan, int center, int up, int upup, int down, int downdown, int left, int leftleft, int right, int rightright);
+void lefttwo(bool tishi[13][13], int i, int j, int fan, int center, int up, int upup, int down, int downdown, int left, int leftleft, int right, int rightright);
+void righttwo(bool tishi[13][13], int i, int j, int fan, int center, int up, int upup, int down, int downdown, int left, int leftleft, int right, int rightright);
+void kuangjia(int arr[13][13], int hang, int lie, int fan, int countt, int *fenshu);
+void wukuang(int arr[13][13], int hang, int lie, int fan,bool markers[13][13]);
+void qiu(int arr[13][13], int hang, int lie, int fan, bool markers[13][13]);
+void kuang(int hang, int lie, int fan, char a1[], char a2[], char a3[], char a4[], char b1[], char b2[], char c1[], char c2[], char c3[], char c4[], char c5[]);
+void fan6(int arr[13][13], bool markers[13][13], int hang, int lie, int fan, bool *mar, int countt);
+void fan7(int arr[13][13], bool markers[13][13], int hang, int lie, int fan, bool *mar, int countt, int *fenshu);
+int xialuo_2(int arr[13][13], bool markers[13][13], int hang, int lie, int fan, int fenshu,  int countt);
+void xinqiu(int arr[13][13], bool markers[13][13], int hang, int lie, int fan);
+void xialuo_qiu(int arr[13][13], bool markers[13][13], int hang, int lie, int fan);
+void tianchong_2(int arr[13][13], bool markers[13][13], int hang, int lie, int fan);
+void xiaochu_tishi(int arr[13][13], int hang, int lie, int fan, int countt, int* q);
+void o_no(int arr[13][13], bool markers[13][13], int hang, int lie, int fan);
+void fan8(int arr[13][13], bool tishi[13][13], int hang, int lie, int fan, int countt,int *fenshu);
+void fan9(int arr[13][13], bool tishi[13][13], bool biaojier[13][13], int hang, int lie, int fan, int x, int y, int *fenshu);
+void biao_zishen(int arr[13][13], bool tishi[13][13], bool biaojier[13][13], int hang, int lie, int fan, int x, int y, bool* xuan_);
+void biao_panduan(int arr[13][13], bool tishi[13][13], bool biaojier[13][13], int hang, int lie, int fan, int x, int y, bool* xuan_, int countt,int *fenshu);
+void biao_all_false(int arr[13][13], bool tishi[13][13], bool biaojier[13][13], int hang, int lie, int fan, int x, int y, bool* xuan_);
+void huan(int arr_choice[13][13], bool markers_choice[13][13], bool tishi[13][13], bool biaojier[13][13], int hang, int lie, int fan, int x, int y, char m, int n, int countt,int *fenshu);
+bool chaa(int arr[13][13], bool tishi[13][13], bool biaojier[13][13], int hang, int lie, int fan, int* fenshu);
+
